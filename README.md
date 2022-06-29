@@ -4,36 +4,39 @@ Project Goal: Create a web page where people can submit their goals for a day.
 
 # Team
 
-@Dylan Eckhart - Developer (week 1 and 5 - Team Lead)<br />
-@Timo Dokter - Developer (week 2 and 6 - Team lead)<br />
+@Dylan Eckhart - Developer (week 1 and 6 - Team Lead)<br />
+@Timo Dokter - Developer (week 2 - Team lead)<br />
 @Ishak Jmilou - Developer (week 3 - Team Lead)<br />
 @Rick Slierendregt - Developer (week 4 - Team Lead)<br />
+@Leonardo Slonek - Developer (week 5 - Team Lead)<br />
 
 # Scope
 
 Features:<br />
 
-- User can submit the time you started working that day<br />
-- User can submit the goal you want to achieve that day<br />
-- Alert the user when they are not working enough<br />
-- Users can make accounts<br />
-- Show previous goals<br />
+- User can submit the time they started working that day.<br />
+- Users can submit the goal they are willing to achieve that day.<br />
+- Alert the user when they are not working enough.<br />
+- Users are able to make an account.<br />
+- Users can see previous goals they made the day(s) before.<br />
 - Be able to Categorise the goals the users submit<br />
 
 Will do:
 
-- User can submit the time you started working that day<br />
-- User can submit the goal you want to achieve that day<br />
-- Users can make accounts<br />
-
+- Users can submit the time they started working that day.<br />
+- Users can submit the goal they are willing to achieve that day.<br />
+- Users are able to make an account.<br />
 
 Won’t do:
 
+- Able to log in with an existing Google or Bit Academy Account.<br />
+- Make it an Android/IOS application.<br />
+
 Might do:
 
-- Show Previous goals<br />
-- Be able to Categorise the goals the users submit<br />
-- Alert the user when they are not working enough<br />
+- Users can see previous goals they made the day(s) before.<br />
+- Be able to Categorise the goals the users submit.<br />
+- Alert the user when they are not working long enough.<br />
 
 # Milestones
 

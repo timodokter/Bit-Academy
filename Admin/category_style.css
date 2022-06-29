@@ -1,0 +1,301 @@
+@import url(../Header/style.css);
+
+* {
+    font-family: "Roobert", "Helvetica", "Arial", sans-serif;
+    margin: 0;
+    color: white;
+}
+
+#body {
+    margin: 15px;
+}
+
+#grid {
+    display: grid;
+    grid-template: auto / minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.form {
+    padding: 15px;
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template: auto / 30% 70%;
+    grid-row-gap: 15px;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    grid-row: span 2;
+}
+
+.formTitle {
+    text-align: center;
+    grid-column: span 2;
+}
+
+.inputTitle {
+    font-size: 24px;
+}
+button {
+    background-color: #1cadc5;
+    border-radius: 30px;
+    width: 40%;
+    height: content-box;
+    padding: 5px;
+    border: none;
+    margin: 5px;
+    font-size: 4vh;
+}
+select, option, input {
+    margin: 10px;
+    font-size: 2.5vh;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+
+/*End category subject en ticket form*/
+
+/*Start of scrollbar category and subject*/
+.listGrid {
+    display: grid;
+    grid-template: auto / minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 15px;
+    grid-column: span 2;
+    margin: 15px;
+}
+
+.existingList {
+    height: 200px;
+    font-size: 24px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    border-top: 2px darkgray solid;
+    border-bottom: 2px darkgray solid;
+}
+
+.selectedTitle {
+    border-bottom: 1px darkgray solid;
+    margin: 0;
+}
+
+#selectedCategory {
+    border-bottom: 1px darkgray solid;
+}
+
+#selectedSubject {
+    border-top: 1px darkgray solid;
+}
+
+.selectedList {
+    font-size: 24px;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    border-top: 1px darkgray solid;
+}
+
+.container{
+    border: 2px darkgray solid;
+    width: 80%;
+    margin: auto;
+    border-radius: 8px;
+}
+
+#existingtitle {
+    font-size: 24px;
+    text-align: center;
+}
+
+.existingForm {
+    text-align: center;
+}
+
+#existingButton {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    width: 100%;
+}
+
+.existingList::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*track*/
+.existingList::-webkit-scrollbar-track {
+    background: darkgray;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Handle */
+.existingList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #1CB2CA;
+}
+
+#existingCategories {
+    grid-column-start: 1;
+}
+
+#existingSubject {
+    grid-column-start: 3;
+}
+
+/* Button Layout */
+button.Submit {
+    background-color: #1db2cb;
+    border-radius: 30px;
+    width: 35%;
+    height: auto;
+    border: none;
+    font-size: 2.5vh;
+    margin: auto;
+    color: white;
+    grid-column: span 2;
+}
+
+button.delete {
+    background-color: #1db2cb;
+    border-radius: 30px;
+    height: auto;
+    border: none;
+    font-size: 2.5vh;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+}
+/*ends of popup message*/
+
+
+/*start of the popup css*/
+.pop-up{
+    text-align: center;
+    background-color: #1db1c9;
+    padding: 0;
+    opacity: 0;
+    border-radius: 15px;
+    position: fixed;
+    height: content-box;
+    line-height: 3vw;
+    width: 0;
+    left: 50%;
+    top: 50%;
+    /*transition: all 1s ease;*/
+    transform: translate(-50%, -50%);
+}
+#yesButton {
+    width: 45%;
+    height: 6vh;
+    font-size: 3vh;
+    background-color: green;
+}
+#noButton {
+    width: 45%;
+    height: 6vh;
+    font-size: 3vh;
+    background-color: red;
+}
+
+/*end of the popup css*/
+
+/*responsive*/
+@media screen and (max-width: 1200px) {
+
+    #grid {
+        display: grid;
+        grid-template: auto / minmax(0, 1fr);
+        grid-gap: 15px;
+    }
+
+    button {
+        background-color: #1cadc5;
+        border-radius: 30px;
+        width: 40%;
+        height: content-box;
+        padding: 5px;
+        border: none;
+        margin: 5px;
+        font-size: 4vh;
+    }
+
+    .listGrid {
+        grid-column: span 1;
+        grid-template: auto/ minmax(0, 1fr);
+    }
+
+    #selectedCatAndSub {
+        grid-row-start: 1;
+    }
+
+    #existingCategories {
+        grid-row-start: 2;
+    }
+
+    #existingSubject {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+
+    .form {
+        grid-template: auto / 30% 70%;
+    }
+    ::placeholder{
+        font-size: 13px;
+    }
+
+    select{
+        font-size: 13px;
+    }
+
+    input{
+        font-size: 13px;
+    }
+
+    .input{
+        font-size: 13px;
+    }
+    select, option, input, p {
+        border-radius: 11px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 912px){
+    .pop-up{
+        overflow-y: hidden;
+        height: content-box;
+        width: content-box;
+        line-height: 6vh;
+    }
+    #yesButton {
+        width: 100%;
+        height: 6vh;
+        background-color: green;
+    }
+    #noButton {
+        width: 100%;
+        height: 6vh;
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .form {
+        grid-template: auto / 1fr;
+    }
+
+    button.Submit, .formTitle {
+        grid-column: span none;
+    }
+
+    .formTitle {
+        font-size: 28px;
+    }
+}
